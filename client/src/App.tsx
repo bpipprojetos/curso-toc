@@ -1,5 +1,4 @@
 import { Toaster } from "@/components/ui/sonner";
-import { WhatsAppButton } from "@/components/ui/whatsapp-button";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import NotFound from "@/pages/NotFound";
 import { Route, Switch } from "wouter";
@@ -38,7 +37,6 @@ function App() {
       >
         <TooltipProvider>
           <Toaster />
-          <WhatsAppButton />
           <Router />
         </TooltipProvider>
       </ThemeProvider>
