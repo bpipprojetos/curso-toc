@@ -481,101 +481,110 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8 items-center">
+          <div className="grid md:grid-cols-2 gap-8 lg:gap-12 items-stretch pt-8">
             {/* Online Plan */}
             <motion.div
-              whileHover={{ y: -10 }}
-              className="bg-zinc-900/50 border border-zinc-800 rounded-2xl p-8 relative overflow-hidden group"
+              whileHover={{ y: -5 }}
+              className="bg-zinc-900/50 border border-zinc-800 rounded-2xl p-8 relative overflow-hidden group flex flex-col h-full"
             >
               <div className="absolute top-0 right-0 bg-zinc-800 text-xs font-bold px-3 py-1 rounded-bl-lg text-gray-300">
                 ONLINE
               </div>
 
-              <h3 className="text-2xl font-bold text-white mb-2">Teoria Online</h3>
-              <p className="text-gray-400 text-sm mb-6">Para quem busca fundamentação teórica sólida</p>
+              <div className="flex-grow">
+                <h3 className="text-2xl font-bold text-white mb-2">Teoria Online</h3>
+                <p className="text-gray-400 text-sm mb-6">Para quem busca fundamentação teórica sólida</p>
 
-              <div className="flex items-baseline gap-1 mb-8">
-                <span className="text-sm text-gray-500 line-through">R$ 697</span>
-                <span className="text-4xl font-bold text-white">R$ 497</span>
-                <span className="text-sm text-gray-400">à vista</span>
+                <div className="flex flex-wrap items-baseline gap-x-2 gap-y-1 mb-8">
+                  <span className="text-sm text-gray-500 line-through">R$ 697</span>
+                  <span className="text-3xl lg:text-4xl font-bold text-white">R$ 497</span>
+                  <span className="text-sm text-gray-400">à vista</span>
+                </div>
+
+                <ul className="space-y-4 mb-8">
+                  <li className="flex items-center gap-3 text-gray-300 text-sm">
+                    <Check className="w-4 h-4 text-primary" />
+                    <span>Acesso à aula ao vivo (Zoom)</span>
+                  </li>
+                  <li className="flex items-center gap-3 text-gray-300 text-sm">
+                    <Check className="w-4 h-4 text-primary" />
+                    <span>Gravação disponível por 6 meses</span>
+                  </li>
+                  <li className="flex items-center gap-3 text-gray-300 text-sm">
+                    <Check className="w-4 h-4 text-primary" />
+                    <span>Certificado de participação (4h)</span>
+                  </li>
+                  <li className="flex items-center gap-3 text-gray-300 text-sm">
+                    <Check className="w-4 h-4 text-primary" />
+                    <span>Material de apoio digital</span>
+                  </li>
+                </ul>
               </div>
 
-              <ul className="space-y-4 mb-8">
-                <li className="flex items-center gap-3 text-gray-300 text-sm">
-                  <Check className="w-4 h-4 text-primary" />
-                  <span>Acesso à aula ao vivo (Zoom)</span>
-                </li>
-                <li className="flex items-center gap-3 text-gray-300 text-sm">
-                  <Check className="w-4 h-4 text-primary" />
-                  <span>Gravação disponível por 6 meses</span>
-                </li>
-                <li className="flex items-center gap-3 text-gray-300 text-sm">
-                  <Check className="w-4 h-4 text-primary" />
-                  <span>Certificado de participação (4h)</span>
-                </li>
-                <li className="flex items-center gap-3 text-gray-300 text-sm">
-                  <Check className="w-4 h-4 text-primary" />
-                  <span>Material de apoio digital</span>
-                </li>
-              </ul>
-
-              <a
-                href="https://typebot.co/marco-cursotoc"
-                target="_blank"
-                className="w-full py-4 rounded-lg border border-primary text-primary font-bold hover:bg-primary hover:text-black transition-all uppercase tracking-wide text-sm text-center block"
-              >
-                Inscrever no Online
-              </a>
+              <div className="mt-auto">
+                <a
+                  href="https://typebot.co/marco-cursotoc"
+                  target="_blank"
+                  className="w-full py-4 rounded-lg border border-primary/30 text-primary font-bold hover:bg-primary hover:text-black transition-all uppercase tracking-wide text-sm text-center block"
+                >
+                  Quero Mais Informações
+                </a>
+              </div>
             </motion.div>
 
             {/* Hybrid Plan (Featured) */}
             <motion.div
-              whileHover={{ y: -10 }}
-              className="bg-zinc-900 border border-primary rounded-2xl p-8 relative overflow-hidden shadow-2xl shadow-primary/10 scale-105"
+              whileHover={{ y: -5 }}
+              className="bg-zinc-900 border-2 border-primary rounded-2xl p-8 relative overflow-hidden shadow-2xl shadow-primary/20 flex flex-col h-full transform transition-transform"
             >
               <div className="absolute top-0 inset-x-0 h-1 bg-primary" />
               <div className="absolute top-4 right-4 bg-primary text-black text-xs font-bold px-3 py-1 rounded-full">
                 MAIS PROCURADO
               </div>
 
-              <h3 className="text-2xl font-bold text-white mb-2">Completo (Híbrido)</h3>
-              <p className="text-gray-400 text-sm mb-6">Teoria + Prática Intensiva Presencial</p>
+              <div className="flex-grow">
+                <h3 className="text-2xl font-bold text-white mb-2">Completo (Híbrido)</h3>
+                <p className="text-gray-400 text-sm mb-6">Teoria + Prática Intensiva Presencial</p>
 
-              <div className="flex items-baseline gap-1 mb-8">
-                <span className="text-sm text-gray-500 line-through">R$ 1.997</span>
-                <span className="text-5xl font-bold text-primary">R$ 1.497</span>
-                <span className="text-sm text-gray-400">à vista</span>
+                <div className="flex flex-wrap items-baseline gap-x-2 gap-y-1 mb-1">
+                  <span className="text-sm text-gray-500 line-through">R$ 2.697,00</span>
+                  <span className="text-3xl sm:text-4xl lg:text-5xl font-bold text-primary">R$ 1.897,00</span>
+                  <span className="text-sm text-gray-400">à vista</span>
+                </div>
+                <p className="text-primary text-xs font-bold mb-8">Consulte condições de parcelamento!</p>
+
+                <ul className="space-y-4 mb-8">
+                  <li className="flex items-center gap-3 text-white text-sm font-medium">
+                    <div className="bg-primary/20 p-1 rounded-full"><Check className="w-3 h-3 text-primary" /></div>
+                    <span>Tudo do plano Online incluso</span>
+                  </li>
+                  <li className="flex items-center gap-3 text-white text-sm font-medium">
+                    <div className="bg-primary/20 p-1 rounded-full"><Check className="w-3 h-3 text-primary" /></div>
+                    <span>Prática presencial em SP (10h)</span>
+                  </li>
+                  <li className="flex items-center gap-3 text-white text-sm font-medium">
+                    <div className="bg-primary/20 p-1 rounded-full"><Check className="w-3 h-3 text-primary" /></div>
+                    <span>Manuseio de equipamentos de ponta</span>
+                  </li>
+                  <li className="flex items-center gap-3 text-white text-sm font-medium">
+                    <div className="bg-primary/20 p-1 rounded-full"><Check className="w-3 h-3 text-primary" /></div>
+                    <span>Certificação Completa (14h)</span>
+                  </li>
+                  <li className="flex items-center gap-3 text-white text-sm font-medium">
+                    <div className="bg-primary/20 p-1 rounded-full"><Check className="w-3 h-3 text-primary" /></div>
+                    <span>Networking com profissionais</span>
+                  </li>
+                </ul>
               </div>
 
-              <ul className="space-y-4 mb-8">
-                <li className="flex items-center gap-3 text-white text-sm font-medium">
-                  <div className="bg-primary/20 p-1 rounded-full"><Check className="w-3 h-3 text-primary" /></div>
-                  <span>Tudo do plano Online incluso</span>
-                </li>
-                <li className="flex items-center gap-3 text-white text-sm font-medium">
-                  <div className="bg-primary/20 p-1 rounded-full"><Check className="w-3 h-3 text-primary" /></div>
-                  <span>Prática presencial em SP (10h)</span>
-                </li>
-                <li className="flex items-center gap-3 text-white text-sm font-medium">
-                  <div className="bg-primary/20 p-1 rounded-full"><Check className="w-3 h-3 text-primary" /></div>
-                  <span>Manuseio de equipamentos de ponta</span>
-                </li>
-                <li className="flex items-center gap-3 text-white text-sm font-medium">
-                  <div className="bg-primary/20 p-1 rounded-full"><Check className="w-3 h-3 text-primary" /></div>
-                  <span>Certificação Completa (14h)</span>
-                </li>
-                <li className="flex items-center gap-3 text-white text-sm font-medium">
-                  <div className="bg-primary/20 p-1 rounded-full"><Check className="w-3 h-3 text-primary" /></div>
-                  <span>Networking com profissionais</span>
-                </li>
-              </ul>
-
-              <NeonButton
-                className="w-full py-4 text-base"
-                onClick={() => window.open("https://typebot.co/marco-cursotoc", "_blank")}
-              >
-                Quero a Formação Completa
-              </NeonButton>
+              <div className="mt-auto pt-6">
+                <NeonButton
+                  className="w-full py-6 text-base"
+                  onClick={() => window.open("https://typebot.co/marco-cursotoc", "_blank")}
+                >
+                  Quero Mais Informações
+                </NeonButton>
+              </div>
             </motion.div>
           </div>
         </div>
